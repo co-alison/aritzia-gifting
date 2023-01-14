@@ -1,18 +1,21 @@
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Form from 'react-bootstrap/Form'
 
-const Second = ({data, setData}) => {
+const Second = ({ data, setData, backendData, setBackendData}) => {
 
-    const { step2 } = data;
+    const { step2 } = backendData;
 
     const handleChange = e => {
         e.persist();
         console.log(e.target.value);
 
+        let filteredData = backendData.filter((item) => item.event === e.target.value); 
+        console.log(filteredData)
         setData({
             ...data,
-            step2: e.target.value,
+            step2: e.target.value
         })
+        return setBackendData(filteredData)
     }
 
     return (
@@ -21,7 +24,7 @@ const Second = ({data, setData}) => {
         <h2>Step 2</h2>
         <h3>Are you shopping for an occasion or event?</h3>
         <Form.Group controlId="step2">
-            {['Option 1', 'Option 2', 'Option 3', 'Option 4'].map((option) => (
+            {['Party', 'Everyday', 'Professional', 'Seasonal Specials'].map((option) => (
                 <div key={option}>
                     <Form.Check
                         value={option}

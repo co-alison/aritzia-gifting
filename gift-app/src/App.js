@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import { useState } from "react";
 import './App.css';
-import Form from "./components/Form"
+import Form from "./components/Form";
 
 const App = () => {
   const [page, setPage] = useState(0);
@@ -14,4 +13,4 @@ const App = () => {
   );
 }
 
-export default App;
+

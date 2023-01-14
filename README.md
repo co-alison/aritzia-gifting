@@ -1,1 +1,3 @@
-# aritzia-gifting
+# The Gift of Luxury, For Everyday
+
+Our focus for this gift guide is to improve the personalization of gift giving, while tailoring to those outside of the target demographic who are unfamiliar with online shopping or Aritzia products. Our current product is a quick and easy 4-step quiz that offers gift recommendations depending on who you are buying for, the event/occasion, colour styles, and type of item. The gift guide has the potential to expand to thousands of different combinations with more options and branches to get more accurate results, while still maintaining accessibility. We also value and recognize that Aritzia's success stems from both online and in-store sales, which is why our product integrates with the in-store experience. Results can be saved and later shown to sales associates to provide further assistance.
